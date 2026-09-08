@@ -1,0 +1,272 @@
+:root {
+  --bg: #121a14;
+  --card: #1b261d;
+  --gold: #d4af37;
+  --green: #2e7d32;
+  --red: #c62828;
+  --text: #f1f8f5;
+  --sub: #a3c2ab;
+  --border: #2a3d2f;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+.hero {
+  width: 100%;
+  height: 140px;
+  background: linear-gradient(to bottom, rgba(18,26,20,0.3), rgba(18,26,20,0.95)), 
+              url('https://images.unsplash.com/photo-1535131749006-b7f58c99034b?auto=format&fit=crop&w=800&q=80') center/cover;
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+  box-sizing: border-box;
+  border-bottom: 2px solid var(--gold);
+}
+
+.hero h1 {
+  font-size: 22px;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+.container {
+  padding: 16px;
+}
+
+h2, h3 {
+  margin: 8px 0;
+  color: var(--gold);
+}
+
+.card-title {
+  margin: 0;
+}
+
+.card {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--sub);
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 4px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #121a14;
+  color: var(--text);
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.row span {
+  font-size: 14px;
+  font-weight: 500;
+  flex: 1;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-stat {
+  color: var(--gold);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.num-input {
+  width: 60px;
+  padding: 6px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #121a14;
+  color: var(--gold);
+}
+
+.num-par-select {
+  width: 80px;
+}
+
+.ring-select {
+  width: 150px;
+}
+
+.stat-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  width: 100%;
+  padding: 14px;
+  background: var(--gold);
+  color: #121a14;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.btn-sec {
+  background: #2a3d2f;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.btn-danger {
+  background: var(--red);
+  color: #fff;
+}
+
+.btn-delete {
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-export {
+  margin: 0;
+  padding: 6px 12px;
+  width: auto;
+  font-size: 13px;
+}
+
+.toggle-btn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  background: var(--red);
+  color: #fff;
+  min-width: 44px;
+}
+
+.toggle-btn.active {
+  background: var(--green);
+  box-shadow: 0 0 8px rgba(46,125,50,0.6);
+}
+
+.hidden {
+  display: none;
+}
+
+.sub-text {
+  color: var(--sub);
+  font-size: 14px;
+  margin: 0;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--sub);
+  background: rgba(0,0,0,0.2);
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.plan-box {
+  background: rgba(0,0,0,0.25);
+  border-left: 4px solid var(--gold);
+  padding: 12px;
+  border-radius: 0 8px 8px 0;
+  margin-top: 8px;
+}
+
+.plan-title {
+  font-weight: bold;
+  color: var(--text);
+  font-size: 15px;
+}
+
+.plan-desc {
+  font-size: 13px;
+  color: var(--sub);
+  margin: 4px 0 0 0;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.history-item {
+  border-bottom: 1px solid var(--border);
+  padding: 12px 0;
+}
+
+.history-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.history-item-title {
+  margin: 0;
+  color: var(--gold);
+}
+
+.credit-card {
+  text-align: center;
+}
+
+.credit-text {
+  font-size: 12px;
+  color: var(--sub);
+  margin: 0;
+}
+
+.credit-text a {
+  color: var(--gold);
+}
