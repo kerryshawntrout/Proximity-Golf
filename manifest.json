@@ -3,7 +3,7 @@
   "name": "Proximity Golf - Shot Precision & Tracking",
   "icons": [
     {
-      "src": "https://cdn-icons-png.flaticon.com/512/2991/2991201.png",
+      "src": "./golfer.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any maskable"
